@@ -1,0 +1,21 @@
+ Context:
+    Track teams train in various ways to prepare for relay races
+    In establishing relay team mebers coaches will often times have runners compete against one another
+    to see how they would run in a relay version off that type of race.
+    Instead of cycling through runners in say a 4x100 team, around to see how well they run in each slot,
+    an alternative approach is to split up the team into 2 unique teams (of the same overall track team) and see how they run against each other in a halved format of the relay.
+    From there this propgramming problem comes into play. By using some type of algorithm we can organize the runners in this 
+    variant of the relay in a way that based on their best race times we can find the quickest times both teams will finish as well as which team is faster.
+
+
+        The user will first input the number of Runners checkpoints (slots) in the relay (each checkpoints will have a runner of both Runners)
+        Next the user will input the fastest time for each racer (rounded to the closest whole second)
+        The format for input will resemble something like this
+        # of checkpoints (n)
+        Runner 1 racer 1(time)   Runner 2  racer 1(time)
+            .                      .
+            .                      .
+            .                      .
+            .                      .
+        Runner 1 racer n(time)   Runner 2  racer n(time)
+        The approach to this problem will be using a greddy alogirthm with sweeping where needed.
